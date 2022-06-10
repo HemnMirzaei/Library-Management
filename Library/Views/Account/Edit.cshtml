@@ -1,0 +1,41 @@
+﻿@model Library.Data.Entities.LibraryUser
+@using Library.Data.Entities
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topicHeader">Edit @Model.Name</h1>
+<hr />
+<div class="row">
+    <div class="mainForm">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <select asp-items="@Html.GetEnumSelectList<Role>()" asp-for="Role"
+                    class="form-control text"></select>
+            </div>
+            <div class="form-group">
+                <input asp-for="Name" class="form-control text" placeholder="Full Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-items="@Html.GetEnumSelectList<Gedner>()" asp-for="Gedner"
+                    class="form-control text"></select>
+            </div>
+            <div class="form-group">
+                <input type="date" asp-for="Birthday" class="form-control text" placeholder="Birthday" />
+                <span asp-validation-for="Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btns btn btn-primary" />
+                <a asp-action="Index" class="btns btn btn-danger">Cancel</a> 
+            </div>
+        </form>
+       
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,13 @@
+﻿@model Library.Data.Entities.Reservation
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topicHeader">You are going to remove a reservation 
+    <br /> Do you want to continue?
+</h1>
+
+<form action="Delete">
+    <input type="submit" value="Yes" class="btns btn btn-danger"/>
+</form>

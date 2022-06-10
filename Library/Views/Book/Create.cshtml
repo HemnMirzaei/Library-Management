@@ -1,0 +1,51 @@
+﻿@model Library.Data.Entities.Book
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topicHeader">New Book</h1>
+<hr />
+<div class="row">
+    <div class="mainForm">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <input asp-for="Name" class="form-control text" placeholder="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <select asp-for="TopicId" class="form-control text" asp-items="@ViewBag.Topics">
+                    <option disabled>Please select a topic</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <input asp-for="Author" class="form-control text" placeholder="Author" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Language" class="form-control text" placeholder="Language" />
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Pages" class="form-control text" placeholder="Pages" />
+                <span asp-validation-for="Pages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Existing" class="form-control text" placeholder="Number" />
+                <span asp-validation-for="Existing" class="text-danger"></span>
+            </div>
+            <div class="form-group"> 
+                <input asp-for="PublishYear" class="form-control text" placeholder="Year" />
+                <span asp-validation-for="PublishYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btns btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+

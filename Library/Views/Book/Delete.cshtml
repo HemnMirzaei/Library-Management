@@ -1,0 +1,53 @@
+﻿@model Library.Data.Entities.Book
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topButton">You are going to delete a book with below information
+     <br /> Do you want to continue?
+</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr>
+           <td>Name </td>
+           <td>@Model.Name</td>
+       </tr>
+       <tr>
+           <td>Topic</td>
+           <td>@Model.Topic.Name</td>
+       </tr>
+       <tr>
+           <td>Author</td>
+           <td>@Model.Author</td>
+       </tr>
+       <tr>
+           <td>Language</td>
+           <td>@Model.Language</td>
+       </tr>
+       <tr>
+           <td>Pages</td>
+           <td>@Model.Pages</td>
+       </tr>
+       <tr>
+           <td>Year</td>
+           <td>@Model.PublishYear</td>
+       </tr>
+       <tr>
+           <td>Number(s)</td>
+           <td>@Model.Existing</td>
+    </tbody>
+</table>
+
+<form asp-action="DeleteYes">
+    <input type="submit" class="btns btn btn-danger" value="Delete" />
+</form>
+

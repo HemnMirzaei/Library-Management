@@ -1,0 +1,33 @@
+﻿@model Library.Core.ViewModels.ReservationViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topicHeader">Add New Reservation</h1>
+
+<hr />
+<div class="row">
+    <div class="mainForm">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label lbl">Book</label>
+                <select asp-for="BookId" class="form-control text" 
+                asp-items="@ViewBag.Books"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label lbl" >User</label>
+                <select asp-for="UserId" class="form-control text" 
+                asp-items="@ViewBag.Users"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btns btn btn-primary" />
+                <a asp-action="Index" class="btns btn btn-danger">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

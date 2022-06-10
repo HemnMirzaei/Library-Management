@@ -1,0 +1,77 @@
+﻿
+@model dynamic
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h1 class="topicHeader">Personal Information</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr>
+           <td>Name </td>
+           <td>@Model.User.Name</td>
+       </tr>
+       <tr>
+           <td>Roel</td>
+           <td>@Model.User.Role</td>
+       </tr>
+       <tr>
+           <td>Gender</td>
+           <td>@Model.User.Gedner</td>
+       </tr>
+       <tr>
+           <td>Birthday</td>
+           <td>@Model.User.Birthday</td>
+       </tr>
+    </tbody>
+</table>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<h1 class="topicHeader">Books On Loan</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Book Name</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int counting = 1;
+        }
+       @foreach(var book in Model.Book)
+        {
+            <tr>
+                <td>@counting</td>
+                <td>@book.Book.Name</td>
+                <td>@book.Date</td>
+                <td>
+                    @Html.ActionLink("Delete","Delete","Home",new{id = @book.Id},new {@class = "buttons btn btn-danger"})
+                </td>
+            </tr>
+        } 
+    </tbody>
+</table>
+
+
+
+

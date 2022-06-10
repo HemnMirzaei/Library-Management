@@ -1,0 +1,17 @@
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Core.deps.json
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Core.runtimeconfig.json
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Core.dll
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Core.pdb
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Data.dll
+F:\Programing\Library\Library.Core\bin\Debug\net6.0\Library.Data.pdb
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.csproj.AssemblyReference.cache
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.AssemblyInfoInputs.cache
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.AssemblyInfo.cs
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.csproj.CoreCompileInputs.cache
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.csproj.CopyComplete
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.dll
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\refint\Library.Core.dll
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.pdb
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\Library.Core.genruntimeconfig.cache
+F:\Programing\Library\Library.Core\obj\Debug\net6.0\ref\Library.Core.dll

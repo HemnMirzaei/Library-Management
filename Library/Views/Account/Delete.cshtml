@@ -1,0 +1,43 @@
+﻿@model Library.Data.Entities.LibraryUser
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1 class="topicHeader">You are going to delete a user with below information
+    <br />
+    Do you wnat to continue?
+</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr>
+           <td>Name </td>
+           <td>@Model.Name</td>
+       </tr>
+       <tr>
+           <td>Roel</td>
+           <td>@Model.Role</td>
+       </tr>
+       <tr>
+           <td>Gender</td>
+           <td>@Model.Gedner</td>
+       </tr>
+       <tr>
+           <td>Birthday</td>
+           <td>@Model.Birthday</td>
+       </tr>
+    </tbody>
+</table>
+
+    <form asp-action="Delete">
+        <input type="submit" value="Yes" class="btns btn btn-danger" />
+        <a asp-action="Index" class="btns btn btn-primary">No</a>
+    </form>
+</div>

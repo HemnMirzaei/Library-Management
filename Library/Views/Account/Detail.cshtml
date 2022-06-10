@@ -1,0 +1,36 @@
+﻿@model Library.Data.Entities.LibraryUser
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr>
+           <td>Name </td>
+           <td>@Model.Name</td>
+       </tr>
+       <tr>
+           <td>Roel</td>
+           <td>@Model.Role</td>
+       </tr>
+       <tr>
+           <td>Gender</td>
+           <td>@Model.Gedner</td>
+       </tr>
+       <tr>
+           <td>Birthday</td>
+           <td>@Model.Birthday</td>
+       </tr>
+    </tbody>
+</table>
+
+@Html.ActionLink("Edit","Edit","Account",new {id = @Model.Id},new {@class = "btns btn btn-success"})
+@Html.ActionLink("Go Back to List","Index","Account",new {id = @Model.Id},new {@class = "btns btn btn-primary"})
+

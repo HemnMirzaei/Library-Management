@@ -1,0 +1,21 @@
+﻿@model Library.Data.Entities.Topic
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 class="topicHeader">You are going to delete
+    <span style="color:red; font-size:50px;">@Model.Name</span> Topic 
+    and all of the books with this topic
+    <br />
+    Do you want to continue?</h1>
+
+<div>
+    <form asp-action="Delete">
+        <input type="submit" value="Yes" class="btns btn btn-danger" />
+        <br />
+        <a asp-action="Index" class="btns btn btn-primary">No</a>
+    </form>
+    
+</div>

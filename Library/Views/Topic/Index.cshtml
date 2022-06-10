@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Library.Data.Entities.Topic>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a asp-action="Create" class="topButton btn btn-primary">New Topic</a>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int counting = 0;
+        }
+        @foreach(var item in Model)
+        {
+            counting++;
+            <tr>
+                <td>@counting</td>
+                <td>@item.Name</td>
+                <td>
+                    @Html.ActionLink("Edit","Edit","Topic",new{id = @item.Id},new {@class = "buttons btn btn-primary"})
+
+                    @Html.ActionLink("Delete","Delete","Topic",new{id = @item.Id},new {@class = "buttons btn btn-danger"})
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

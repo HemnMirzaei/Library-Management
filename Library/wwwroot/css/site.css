@@ -1,0 +1,92 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.btns{
+    width:100%;
+    margin-top:10px;
+    font-size:30px;
+    font-family:Cambria;
+}
+
+.mainForm{
+    width:60%;
+    margin-left:20%;
+}
+
+.text{
+    font-size:25px;
+    font-family:Cambria;
+    text-align:center;
+    margin-top:20px;
+}
+
+.topicHeader{
+    font-size:40px;
+    font-family:Cambria;
+    font-weight:bold;
+    text-align:center;
+    margin:30px;
+}
+
+.spinner {
+    border: 16px solid silver;
+    border-top: 16px solid #337AB7;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 700ms linear infinite;
+    top: 40%;
+    left: 55%;
+    position: absolute;
+}
+
+
+.topButton{
+    font-size:30px;
+    font-family:Cambria;
+    text-align:center;
+    width:100%;
+}
+
+.lbl{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:10px;
+    font-family:Cambria;
+    margin-left:10px;
+}
+
+table thead tr th {
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    font-family: Cambria;
+
+}
+
+table tbody tr td{
+    text-align:center;
+    font-size:20px;
+    font-family:Cambria;
+}
+
+
+.buttons{
+    width:100px;
+}
